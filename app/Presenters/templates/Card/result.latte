@@ -1,0 +1,9 @@
+{block content}
+    <h1>Ověření karty</h1>
+
+    {if isset($cardNumber) && $created}
+        <p>Ticket byl vytvořen.</p>
+    {else}
+        <p>Karta {$cardNumber} není aktivovaná, ticket nebyl vytvořen! </p>
+    {/if}
+{/block}
